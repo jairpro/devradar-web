@@ -1,8 +1,8 @@
 import axios from 'axios';
+import { API_URL } from '../.env.json';
 
 const api = axios.create({
- //baseURL: 'http://localhost:3333'
- baseURL: 'https://backend-devradar-jairpro.netlify.com'
+  baseURL: API_URL,
 });
 
 export default api;
